@@ -1,1 +1,33 @@
+# Site settings
+title: SunTzu
+description: >-
+  A site for Hawk Eye's projects and music.
+baseurl: "/SunTzu" # The subpath if your site is hosted at 'username.github.io/SunTzu'
+url: "https://username.github.io" # Replace with your GitHub Pages URL
 
+# Author settings
+author:
+  name: Hawk Eye
+  email: example@example.com
+
+# Build settings
+theme: minima # Default theme (can be changed to any supported Jekyll theme)
+plugins:
+  - jekyll-feed # Optional plugin for RSS feed
+  - jekyll-sitemap # Optional plugin for sitemap generation
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM # GitHub Flavored Markdown
+  syntax_highlighter: rouge
+
+# Exclude files and directories from the build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Deployment settings
+paginate: 10
+paginate_path: "/page:num/"
